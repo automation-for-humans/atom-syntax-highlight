@@ -1,0 +1,57 @@
+'scopeName': 'automationforhumans.example'
+'fileTypes' : [
+  'afh'
+]
+'name' : 'automationforhumans'
+'patterns' : [
+  {
+    'include' : '#main'
+  }
+]
+'scopeName' : 'source.automationforhumans'
+'uuid' : ''
+'repository' : {
+  'main' : {
+    'patterns' : [
+      {
+        'match' : '(\\bopen\\b|\\bclick\\b|\\btype\\b|\\bwait\\b|\\bhover\\b|\\bassert\\b|\\bexecjs\\b|\\bpresent\\b)'
+        'name' : 'keyword.control.automationforhumans'
+      }
+      {
+        'match' : '(\\bif\\b|\\bin\\b|\\bon\\b|\\bfor\\b|\\buntil\\b)'
+        'name' : 'keyword.operator.automationforhumans'
+      }
+      {
+        'match' : '(\\b\\d[a-zA-Z0-9]*)'
+        'name' : 'constant.numeric.automationforhumans'
+      }
+      {
+        'match' : '(;)'
+        'name' : 'punctuation.automationforhumans'
+      }
+      {
+        'begin' : '(\\")'
+        'beginCaptures' : {
+          '1' : {
+            'name' : 'punctuation.definition.string.begin.automationforhumans'
+          }
+        }
+        'contentName' : 'string.automationforhumans'
+        'end' : '(\\")'
+        'endCaptures' : {
+          '1' : {
+            'name' : 'punctuation.definition.string.end.automationforhumans'
+          }
+        }
+      }
+      {
+        'match' : '(#.*)'
+        'name' : 'comment.automationforhumans'
+      }
+    ]
+  }
+  'main__1' : {
+    'patterns' : [
+    ]
+  }
+}
