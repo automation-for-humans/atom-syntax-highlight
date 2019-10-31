@@ -2,14 +2,12 @@
   "name": "afh-syntax-highlight",
   "version": "1.0.0",
   "description": "Syntax Highlighting for AFH files in Atom",
-  "repository": "https://github.com/user/package-name",
+  "repository": "https://github.com/automation-for-humans/atom-syntax-highlight",
   "keywords": [
     "syntax",
     "highlighting",
     "grammar"
   ],
-  "license": "MIT",
-  "bugs": "https://github.com/user/package-name/issues",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   }
